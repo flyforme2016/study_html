@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewprt" content="width=device-width, initial-scale=1.0">
+	<title>GIJEONG</title>	
+</head>
+<body>
+
+	<form action="./formResult.html" id="form" name="form">
+		<input type="text" id="nickname" name="nickname">
+		<input type="button" id="button" name="button" value="제출" onclick="here();">
+	</form>
+	
+	<script type="text/javascript">
+		function here(){
+			alert("nickname: " + document.getElementById("nickname").value);
+			document.getElementById("form").submit();
+		}
+	</script>
+
+</body>
+</html>
