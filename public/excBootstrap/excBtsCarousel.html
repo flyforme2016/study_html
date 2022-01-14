@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  	<!-- 일정 시간마다 다음 사진으로 넘어가는 slide -->
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="../0103Monday/1.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.image/steak.png" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	</div>
+	
+	<hr>
+	<!-- 양쪽 사이드 중앙에 화살표로 slide page control -->
+	<!-- 밑에 button 부분이 controler -->
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="../0103Monday/1.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.image/steak.png" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+	
+	<hr>
+	<!-- page controler와 함께 하단 중앙에 page 번호를 나태내 주는 indicators -->
+	<!-- 위에 button 부분이 indicator -->
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="../0103Monday/1.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.image/steak.png" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+	
+	<hr>
+	<!-- 위에 slide에서 page 별 caption기능 추가 -->
+	<!-- 위에 button target을 Captions으로 바꾸면 captinon이 추가된 indicators -->
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="../0103Monday/1.jpg" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block">
+	        <h5>First slide label</h5>
+	        <p>Some representative placeholder content for the first slide.</p>
+	      </div>
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.jpg" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block">
+	        <h5>Second slide label</h5>
+	        <p>Some representative placeholder content for the second slide.</p>
+	      </div>
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.image/steak.png" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block">
+	        <h5>Third slide label</h5>
+	        <p>Some representative placeholder content for the third slide.</p>
+	      </div>
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+	
+	<hr>
+	<!-- page가 fade in/out 형태로 넘어가는 slide -->
+	<!-- div class에 carousel-fade 추가 -->
+	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="../0103Monday/1.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.image/steak.png" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+	
+	<hr>
+	<!-- interval값을 입력하여 자동으로 넘어가는 주기 설정 가능 -->
+	<!-- carousel-inner의 각 div 요소들에 interval 값 지정 -->
+	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active" data-bs-interval="10000">
+	      <img src="../0103Monday/1.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item" data-bs-interval="2000">
+	      <img src="../0103Monday/2.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.image/steak.png" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+	
+	<hr>
+	<!-- data-bs-touch="false" : 터치로 인한 페이지 이동을 안됨 -->
+	<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="../0103Monday/1.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.image/steak.png" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+	
+	<hr>
+	<!-- "carousel carousel-dark slide : 양옆 방향키와 하단 슬라이드 넘버에 검은색 효과 -->
+	<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active" data-bs-interval="10000">
+	      <img src="../0103Monday/1.jpg" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block">
+	        <h5>First slide label</h5>
+	        <p>Some representative placeholder content for the first slide.</p>
+	      </div>
+	    </div>
+	    <div class="carousel-item" data-bs-interval="2000">
+	      <img src="../0103Monday/2.jpg" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block">
+	        <h5>Second slide label</h5>
+	        <p>Some representative placeholder content for the second slide.</p>
+	      </div>
+	    </div>
+	    <div class="carousel-item">
+	      <img src="../0103Monday/2.image/steak.png" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block">
+	        <h5>Third slide label</h5>
+	        <p>Some representative placeholder content for the third slide.</p>
+	      </div>
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+	
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
